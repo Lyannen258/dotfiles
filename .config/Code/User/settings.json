@@ -1,0 +1,38 @@
+{
+    "haskell.manageHLS": "PATH",
+    "window.zoomLevel": 1,
+    "editor.wordWrap": "on",
+    "haskell.plugin.rename.config.crossModule": true,
+    "workbench.colorTheme": "Groovy Lambda",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "p"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        }
+    ]
+}

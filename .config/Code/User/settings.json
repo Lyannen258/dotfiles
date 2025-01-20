@@ -34,5 +34,12 @@
                 "workbench.action.quickOpen"
             ]
         }
-    ]
+    ],
+    "[purescript]": {
+        "editor.defaultFormatter": "nwolverson.ide-purescript"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "redhat.telemetry.enabled": true
 }

@@ -44,6 +44,14 @@ let g:lightline = {'colorscheme': 'tokyonight'}
 "" Make neoformat use purs-tidy
 let g:neoformat_enabled_purescript = ['purstidy']
 
+"" Customize NERDTree
+let NERDTreeShowHidden=1
+
+nnoremap <Space>n :NERDTreeToggle<CR>
+
+"" FZF Keymap
+nnoremap <Space>f :Files<CR>
+
 lua <<EOF
 
 -- Custom keybinds

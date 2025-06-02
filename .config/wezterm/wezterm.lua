@@ -65,4 +65,7 @@ tabline.setup({
 
 tabline.apply_to_config(config)
 
+-- Run fish by default
+config.default_prog = { '/usr/bin/fish', '-l' }
+
 return config

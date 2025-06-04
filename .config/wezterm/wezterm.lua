@@ -2,26 +2,6 @@ local wezterm = require("wezterm")
 local config = {}
 
 config.color_scheme = "Tokyo Night Storm"
-config.window_frame = {
-	active_titlebar_bg = "#24283b",
-}
-
-config.colors = {
-	tab_bar = {
-		active_tab = {
-			bg_color = "#364a82",
-			fg_color = "#c0caf5",
-		},
-		inactive_tab = {
-			bg_color = "#24283b",
-			fg_color = "#c0caf5",
-		},
-		new_tab = {
-			bg_color = "#364a82",
-			fg_color = "#c0caf5",
-		},
-	},
-}
 
 local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabline.wez")
 
@@ -30,7 +10,11 @@ tabline.setup({
 		icons_enabled = true,
 		theme = "Tokyo Night Storm",
 		tabs_enabled = true,
-		theme_overrides = {},
+		theme_overrides = {
+			tab = {
+				active = { bg = "#7aa2f7", fg = "#24283b" },
+			},
+		},
 		section_separators = {
 			left = wezterm.nerdfonts.pl_left_hard_divider,
 			right = wezterm.nerdfonts.pl_right_hard_divider,
@@ -66,6 +50,6 @@ tabline.setup({
 tabline.apply_to_config(config)
 
 -- Run fish by default
-config.default_prog = { '/usr/bin/fish', '-l' }
+config.default_prog = { "/usr/bin/fish", "-l" }
 
 return config

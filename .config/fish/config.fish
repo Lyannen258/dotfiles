@@ -2,6 +2,10 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+function fish_greeting
+    # Custom greeting message
+end
+
 # Empty lines between command outputs
 # function blank_before_cmd --on-event fish_preexec
 #     # Eine Leerzeile ausgeben

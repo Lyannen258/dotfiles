@@ -17,18 +17,21 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot
+set $term wezterm
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu -nb '#121D31' -sb '#203258' -l '7' | xargs swaymsg exec --
+# set $menu dmenu_path | dmenu -nb '#121D31' -sb '#203258' -l '7' | xargs swaymsg exec --
+set $menu fuzzel
 
+
+include config-local
 include /etc/sway/config-vars.d/*
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/lyannen/Downloads/wallpaperflare.com_wallpaper.jpg fill
+#output * bg /home/lyannen/Downloads/wallpaperflare.com_wallpaper.jpg fill
 #
 # Example configuration:
 #
@@ -63,9 +66,9 @@ output eDP-1 resolution 2736x1824 scale 2
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
-input "type:keyboard" {
-	xkb_layout de
-}
+#input "type:keyboard" {
+#	xkb_layout de
+#}
 
 ### Key bindings
 #
@@ -242,6 +245,10 @@ bindsym XF86AudioLowerVolume exec amixer set Master 5%-
 # Windows
 client.focused #203258 #203258 #ffffff #203258 #203258
 client.unfocused #121D31 #121D31 #ffffff #121D31 #121D31
+client.focused_inactive #121D31 #121D31 #ffffff #121D31 #121D31
+
+font pango:JetBrainsMono Nerd Font Regular 11
+
 
 include /etc/sway/config.d/*
 

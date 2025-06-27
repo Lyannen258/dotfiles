@@ -43,10 +43,10 @@ include /etc/sway/config-vars.d/*
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
+exec swayidle -w \
+         timeout 300 'swaylock -f -c 121D31' \
+         timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+         before-sleep 'swaylock -f -c 121D31'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -68,6 +68,17 @@ include /etc/sway/config-vars.d/*
 #input "type:keyboard" {
 #	xkb_layout de
 #}
+
+workspace 1 output DP-3
+workspace 2 output DP-3
+workspace 3 output DP-3
+workspace 4 output DP-3
+workspace 5 output DP-3
+workspace 6 output HDMI-A-1
+workspace 7 output HDMI-A-1
+workspace 8 output HDMI-A-1
+workspace 9 output HDMI-A-1
+workspace 10 output HDMI-A-1
 
 ### Key bindings
 #

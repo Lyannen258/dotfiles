@@ -61,3 +61,4 @@ set -g __fish_git_prompt_color $yellow
 set -g __fish_git_prompt_color_prefix $yellow
 set -g __fish_git_prompt_color_suffix $yellow
 set -g __fish_git_prompt_color_branch $yellow
+set -g __fish_git_prompt_char_dirtystate '⚡'

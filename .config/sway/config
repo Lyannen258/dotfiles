@@ -6,6 +6,7 @@
 
 ### Own values that were not in the file before
 gaps inner 10
+default_border none
 
 ### Variables
 #
@@ -21,7 +22,7 @@ set $term wezterm
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-# set $menu dmenu_path | dmenu -nb '#121D31' -sb '#203258' -l '7' | xargs swaymsg exec --
+# set $menu dmenu_path | dmenu -nb '#1f2335' -sb '#24283b' -l '7' | xargs swaymsg exec --
 set $menu fuzzel
 
 
@@ -44,9 +45,9 @@ include /etc/sway/config-vars.d/*
 # Example configuration:
 #
 exec swayidle -w \
-         timeout 300 'swaylock -f -c 121D31' \
+         timeout 300 'swaylock -f -c 1f2335' \
          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-         before-sleep 'swaylock -f -c 121D31'
+         before-sleep 'swaylock -f -c 1f2335'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -104,7 +105,7 @@ workspace 10 output HDMI-A-1
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
     # Lock screen
-    bindsym $mod+Escape exec swaylock --color 121D31
+    bindsym $mod+Escape exec swaylock --color 1f2335
 
     # Logout menu
     bindsym $mod+Shift+Escape exec wlogout
@@ -243,9 +244,9 @@ bindsym $mod+Control+Space exec swaymsg input '9610:4102:Gaming_KB__Gaming_KB__K
 
 #     colors {
 #         statusline #ffffff
-# 	background #121D31
+# 	background #1f2335
 # 	focused_workspace #9A2E52 #9A2E52 #ffffff
-# 	inactive_workspace #121D31 #121D31 #ffffff
+# 	inactive_workspace #1f2335 #1f2335 #ffffff
 #     }
 # }
 
@@ -253,9 +254,9 @@ bindsym $mod+Control+Space exec swaymsg input '9610:4102:Gaming_KB__Gaming_KB__K
 # Personal Theme
 #
 # Windows
-client.focused #203258 #203258 #ffffff #203258 #203258
-client.unfocused #121D31 #121D31 #ffffff #121D31 #121D31
-client.focused_inactive #121D31 #121D31 #ffffff #121D31 #121D31
+client.focused #24283b #24283b #ffffff #24283b #24283b
+client.unfocused #1f2335 #1f2335 #ffffff #1f2335 #1f2335
+client.focused_inactive #1f2335 #1f2335 #ffffff #1f2335 #1f2335
 
 font pango:JetBrainsMono Nerd Font Regular 11
 

@@ -2,11 +2,11 @@
 # VERSION: 3.0
 SETUVAR --path PATH:/usr/local/bin\x1e/opt/nvim\x2dlinux\x2dx86_64/bin/\x1e/usr/bin\x1e/opt/nvim\x2dlinux\x2dx86_64/bin/\x1e/bin\x1e/opt/nvim\x2dlinux\x2dx86_64/bin/\x1e/usr/local/games\x1e/opt/nvim\x2dlinux\x2dx86_64/bin/\x1e/usr/games\x1e/opt/nvim\x2dlinux\x2dx86_64/bin/
 SETUVAR __fish_git_prompt_char_dirtystate:\u26a1
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_cwd_root:red
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host_remote:yellow
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
 SETUVAR fish_key_bindings:fish_default_key_bindings
-SETUVAR fish_user_paths:/opt/nvim\x2dlinux\x2dx86_64/bin\x1e/opt/node\x2dv24\x2e3\x2e0\x2dlinux\x2dx64/bin
+SETUVAR fish_user_paths:/home/lyannen/Code/project\x2dalternative/deployment/node_modules/\x2ebin\x1e/home/lyannen/\x2epulumi/bin\x1e/opt/nvim\x2dlinux\x2dx86_64/bin\x1e/opt/node\x2dv24\x2e3\x2e0\x2dlinux\x2dx64/bin

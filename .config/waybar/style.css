@@ -224,12 +224,14 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+    padding-left: 10px;
+    padding-right: 14px;
+    background-color: #24283b;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
+    background-color: #2e3c64;
+    color: #ffffff;
 }
 
 #mpd {

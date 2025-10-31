@@ -266,3 +266,5 @@ include /etc/sway/config.d/*
 
 exec waybar
 exec mako
+exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec systemctl --user restart xdg-desktop-portal xdg-desktop-portal-wlr
